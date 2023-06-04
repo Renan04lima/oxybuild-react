@@ -16,7 +16,7 @@ function ProjectFullwidthPage({
     return (
         <>
             <Head>
-                <title>Projects FullWidth - OxyBuild</title>
+                <title>Projects FullWidth - Quintal de Gaya</title>
                 <meta name="description" content="Projects FullWidth" />
             </Head>
             <Breadcrumb

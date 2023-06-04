@@ -18,10 +18,10 @@ function ServiceDetailsPage({
     return (
         <>
             <Head>
-                <title>{service.title} - Oxybuild</title>
+                <title>{service.title} - Quintal de Gaya</title>
                 <meta
                     name="description"
-                    content="OxyBuild - Construction React Next JS Template Industry, Products Manufacturing Company, building companies, architecture firms, and the like can take to their advantage by using OxyBuild - Construction React Next JS Template."
+                    content="Quintal de Gaya - Escola Montessori"
                 />
             </Head>
             <Breadcrumb

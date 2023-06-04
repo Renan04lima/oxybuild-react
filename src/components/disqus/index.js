@@ -2,12 +2,12 @@ import { DiscussionEmbed } from 'disqus-react';
 import classes from './index.module.scss';
 
 function DisqusForm() {
-    const disqusShortname = 'Oxybuild';
+    const disqusShortname = 'Quinta de Gaya';
 
     const disqusConfig = {
-        url: 'https://oxybuild.disqus.com/',
+        url: 'https://quintaldegaya.com/',
         identifier: '123',
-        title: 'oxybuild-post',
+        title: 'quintal-post',
     };
     return (
         <div className={classes.area}>

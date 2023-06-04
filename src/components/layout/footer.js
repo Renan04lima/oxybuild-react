@@ -167,7 +167,7 @@ function Footer({ footerItems }) {
                                     <div className={classes.copyright}>
                                         <span className={classes.text}>
                                             © {new Date().getFullYear()}{' '}
-                                            OxyBuild Made with
+                                            Quintal de Gaya Made with
                                             <span className={classes.icon}>
                                                 <FaIcons.FaHeart />
                                             </span>

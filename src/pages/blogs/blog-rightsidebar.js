@@ -19,7 +19,7 @@ function BlogLeftSidebarPage({
     return (
         <>
             <Head>
-                <title>Blogs RightSidebar - OxyBuild</title>
+                <title>Blogs RightSidebar - Quintal de Gaya</title>
                 <meta name="description" content="All Blogs" />
             </Head>
             <Breadcrumb

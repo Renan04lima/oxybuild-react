@@ -9,7 +9,7 @@ function BlogCategoryPage({ categories, tags, blogs, blogsSidebar }) {
     return (
         <>
             <Head>
-                <title>Blog Category - OxyBuild</title>
+                <title>Blog Category - Quintal de Gaya</title>
                 <meta name="description" content="All Blogs" />
             </Head>
             <BlogLeftSidebar

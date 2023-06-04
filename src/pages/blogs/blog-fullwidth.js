@@ -10,7 +10,7 @@ function DefaultBlogPage({ blogs, newsletterItems, footerItems }) {
     return (
         <>
             <Head>
-                <title>Blogs Fullwidth - OxyBuild</title>
+                <title>Blogs Fullwidth - Quintal de Gaya</title>
                 <meta name="description" content="All Blogs" />
             </Head>
             <Breadcrumb

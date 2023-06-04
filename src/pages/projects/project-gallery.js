@@ -16,7 +16,7 @@ function ProjectGalleryPage({
     return (
         <>
             <Head>
-                <title>Projects Gallery - OxyBuild</title>
+                <title>Projects Gallery - Quintal de Gaya</title>
                 <meta name="description" content="Projects Gallery" />
             </Head>
             <Breadcrumb

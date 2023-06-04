@@ -9,7 +9,7 @@ function BlogTagPage({ categories, tags, blogs, blogsSidebar }) {
     return (
         <>
             <Head>
-                <title>Blog Tags - OxyBuild</title>
+                <title>Blog Tags - Quintal de Gaya</title>
                 <meta name="description" content="All Blogs" />
             </Head>
             <BlogLeftSidebar
