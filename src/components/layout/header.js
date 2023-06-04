@@ -78,7 +78,7 @@ function Header() {
                                             src="/images/header/icon/clock.png"
                                             alt="Phone"
                                         />
-                                        <span>9.00 am - 11.00 pm</span>
+                                        <span>8.00 am - 6.00 pm</span>
                                     </div>
                                 </div>
                             </Col>
@@ -155,9 +155,35 @@ function Header() {
                                                 <span>Home</span>
                                             </Link>
                                         </li>
+                                        <li className={classes.dropdown_holder}>
+                                            <Link href="/projects/project-fullwidth">
+                                                <span>O Quintal</span>
+                                            </Link>
+                                            <ul
+                                                className={
+                                                    classes.dropdown_menu
+                                                }
+                                            >
+                                                <li>
+                                                    <Link href="/projects/project-2-columns">
+                                                        Quem Somos
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/projects/project-gallery">
+                                                        Unidades
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/projects/project-slider">
+                                                        Matrículas
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li>
                                             <Link href="/about">
-                                                <span>About Us</span>
+                                                <span>Quem Somos</span>
                                             </Link>
                                         </li>
                                         <li>
@@ -167,7 +193,7 @@ function Header() {
                                         </li>
                                         <li className={classes.dropdown_holder}>
                                             <Link href="/projects/project-fullwidth">
-                                                <span>Projects</span>
+                                                <span>Metodologias</span>
                                             </Link>
                                             <ul
                                                 className={
@@ -176,17 +202,17 @@ function Header() {
                                             >
                                                 <li>
                                                     <Link href="/projects/project-2-columns">
-                                                        Project 2 Columns
+                                                        Turma 1
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/projects/project-gallery">
-                                                        Project Gallery
+                                                        Turma 2
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/projects/project-slider">
-                                                        Project Slider
+                                                        Turma 3
                                                     </Link>
                                                 </li>
                                             </ul>
@@ -240,7 +266,7 @@ function Header() {
                                         </li>
                                         <li className={classes.separator}>
                                             <Link href="/contact">
-                                                <span>Contact</span>
+                                                <span>Fale Conosco</span>
                                             </Link>
                                         </li>
                                         <li
@@ -250,7 +276,7 @@ function Header() {
                                                     : 'search-hide'
                                             }`}
                                         >
-                                            <buton
+                                            <buton // ISSUE: trocar por botão semelhante ao layout anterior
                                                 className={classes.search__btn}
                                                 onClick={SearchToggle}
                                             >
