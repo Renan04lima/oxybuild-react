@@ -10,16 +10,16 @@ function ContactPage({ contactItems, newsletterItems, footerItems }) {
     return (
         <>
             <Head>
-                <title>Contact - Quintal de Gaya</title>
+                <title>Fale Conosco</title>
                 <meta
                     name="description"
-                    content="Quintal de Gaya - Escola Montessori"
+                    content="Quintal de Gaya - Escola Montessori."
                 />
             </Head>
             <Breadcrumb
-                subTitle="Contact us"
-                title="Get in Touch"
-                desc="Construction of itself, because it is pain some proper style design occur are pleasure"
+                subTitle="Fale Conosco"
+                title="Entre em contato"
+                desc="Quintal de Gaya - Escola Montessori"
             />
             <Contact contactItems={contactItems} />
             <Newsletter newsletterItems={newsletterItems} />

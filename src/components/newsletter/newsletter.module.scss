@@ -3,17 +3,30 @@
 @import '../../styles/components/button';
 
 .bg {
-    background-image: url('/images/newsletter/bg/1-1-1920x198.png');
+    background-color: $primary;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 .item {
+    @media (min-width: 992px) {
+        position: relative;
+        left: 30%;
+    }
     @include breakpoint(min-lg-device) {
         display: flex;
         align-items: center;
         width: calc(100% - 65px);
+    }
+    .icon {
+        color: $white;
+        position: relative;
+        top: 10%;
+        margin-left: 2px;
+    }
+    .texto {
+        font-size: 12px;
     }
 }
 .title {
@@ -39,7 +52,7 @@
     }
     &:before {
         @include breakpoint(min-lg-device) {
-            background-color: #ffb390;
+            background-color: $verde;
             width: 1px;
             height: 100px;
             content: '';
@@ -47,54 +60,6 @@
             top: 50%;
             right: 0;
             transform: translateY(-50%);
-        }
-    }
-}
-.form {
-    position: relative;
-    width: 100%;
-    max-width: 625px;
-    .input {
-        &_field {
-            background-color: transparent;
-            border: 1px solid #ffb390;
-            font-family: $yantramanav;
-            color: $white;
-            opacity: 0.9;
-            width: 100%;
-            height: 75px;
-            padding-left: 25px;
-            padding-right: 210px;
-            font-size: 18px;
-            @include breakpoint(max-xs-device) {
-                padding-right: 25px;
-            }
-            &::placeholder {
-                color: $white;
-            }
-        }
-    }
-}
-.btn {
-    &__wrap {
-        @include breakpoint(min-sm-device) {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-        }
-        .btn {
-            font-family: $rajdhani;
-            font-weight: 600;
-            width: auto;
-            height: 100%;
-            padding-left: 30px;
-            padding-right: 30px;
-            @include breakpoint(max-xs-device) {
-                margin-top: 15px;
-                width: 100%;
-                height: 70px;
-            }
         }
     }
 }

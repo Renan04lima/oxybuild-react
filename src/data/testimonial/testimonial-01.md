@@ -1,9 +1,9 @@
 ---
 id: 'testimonial-01'
 title: 'testimonial'
-excerpt: 'Publishing packages and web page now use Lorem Ipsum as their mel text, and a search for lorem more than one articel a is very important which can be help us for building a beauiful construction design...'
-avatar: '/images/testimonial/avatar/1-1-46x46.png'
+excerpt: 'Escolhi a liberdade assistida praticada pelo Quintal de Gaya para meu filho, assim ele desenvolve suas habilidades, desfruta da natureza e vive sua infância com amor e respeito.'
+avatar: '/images/testimonial/avatar/1-1-46x46.jpg'
 avatarAlt: 'Testimonial Avatar'
-userName: 'Christoper Luis'
-userOccupation: 'CEO, Octafact Group'
+userName: 'Denise'
+userOccupation: 'Mão do Bento - Ninho II'
 ---

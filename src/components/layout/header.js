@@ -50,6 +50,10 @@ function Header() {
             [id.toString()]: !prevData[id.toString()],
         }));
 
+    const handleEntrarClick = () => {
+        window.open('https://quintaldegaya.paineldoaluno.com.br/', '_blank');
+    };
+
     // End here
 
     return (
@@ -61,7 +65,7 @@ function Header() {
                             <Col
                                 xl={{ span: 4, offset: 2 }}
                                 lg={{ span: 5, offset: 3 }}
-                                className="d-none d-lg-block"
+                                className="d-none d-lg-block d-lg-none"
                             >
                                 <div className={classes.info}>
                                     <div className={classes.contact_number}>
@@ -78,7 +82,7 @@ function Header() {
                                             src="/images/header/icon/clock.png"
                                             alt="Phone"
                                         />
-                                        <span>9.00 am - 11.00 pm</span>
+                                        <span>8.00 am - 6.00 pm</span>
                                     </div>
                                 </div>
                             </Col>
@@ -92,41 +96,17 @@ function Header() {
                                     </Link>
                                 </div>
                             </Col>
-                            <Col xl={6} lg={4} sm={6}>
+                            <Col
+                                xl={6}
+                                lg={4}
+                                sm={6}
+                                className="d-block d-lg-none"
+                            >
                                 <div className={classes.right}>
                                     <div>
-                                        <Link href="/login-register">
-                                            Login
-                                            <span>/ Register</span>
+                                        <Link href="https://quintaldegaya.paineldoaluno.com.br/">
+                                            Área do Aluno
                                         </Link>
-                                    </div>
-                                    <div
-                                        className={`${
-                                            search
-                                                ? 'search-show'
-                                                : 'search-hide'
-                                        } d-block d-lg-none search-holder`}
-                                    >
-                                        <buton
-                                            className={classes.search__btn}
-                                            onClick={SearchToggle}
-                                        >
-                                            <FaSearch />
-                                        </buton>
-                                        <form className="search-form">
-                                            <input
-                                                className="search-input"
-                                                type="search"
-                                                name="search"
-                                                placeholder="Search"
-                                            />
-                                            <button
-                                                className="search-inner__btn"
-                                                type="submit"
-                                            >
-                                                <FaSearch />
-                                            </button>
-                                        </form>
                                     </div>
                                     <div className={classes.offcanvas}>
                                         <buton
@@ -155,19 +135,9 @@ function Header() {
                                                 <span>Home</span>
                                             </Link>
                                         </li>
-                                        <li>
-                                            <Link href="/about">
-                                                <span>About Us</span>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/services">
-                                                <span>Service</span>
-                                            </Link>
-                                        </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/projects/project-fullwidth">
-                                                <span>Projects</span>
+                                            <Link href="/blank">
+                                                <span>O Quintal</span>
                                             </Link>
                                             <ul
                                                 className={
@@ -175,25 +145,25 @@ function Header() {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/projects/project-2-columns">
-                                                        Project 2 Columns
+                                                    <Link href="/blank">
+                                                        Quem Somos
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/projects/project-gallery">
-                                                        Project Gallery
+                                                    <Link href="/blank">
+                                                        Unidades
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/projects/project-slider">
-                                                        Project Slider
+                                                    <Link href="/blank">
+                                                        Matrículas
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/">
-                                                <span>Pages</span>
+                                            <Link href="/blank">
+                                                <span>Etapas de Ensino</span>
                                             </Link>
                                             <ul
                                                 className={
@@ -201,75 +171,39 @@ function Header() {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/our-clients">
-                                                        Our Clients
+                                                    <Link href="/blank">
+                                                        Materna
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/our-team">
-                                                        Our Team
+                                                    <Link href="/blank">
+                                                        Ninho I
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/our-working-process">
-                                                        Our Working Process
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className={classes.dropdown_holder}>
-                                            <Link href="/blogs/blog-fullwidth">
-                                                <span>Blogs</span>
-                                            </Link>
-                                            <ul
-                                                className={
-                                                    classes.dropdown_menu
-                                                }
-                                            >
-                                                <li>
-                                                    <Link href="/blogs/blog-leftsidebar">
-                                                        Blog Left Sidebar
+                                                    <Link href="/blank">
+                                                        Ninho II
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/blogs/blog-rightsidebar">
-                                                        Blog Right Sidebar
+                                                    <Link href="/blank">
+                                                        Ciclo I
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className={classes.separator}>
-                                            <Link href="/contact">
-                                                <span>Contact</span>
+                                            <Link href="/blank">
+                                                <span>Fale Conosco</span>
                                             </Link>
                                         </li>
-                                        <li
-                                            className={`${
-                                                search
-                                                    ? 'search-show'
-                                                    : 'search-hide'
-                                            }`}
-                                        >
-                                            <buton
-                                                className={classes.search__btn}
-                                                onClick={SearchToggle}
+                                        <li className={classes.login}>
+                                            <Link
+                                                href="https://quintaldegaya.paineldoaluno.com.br/"
+                                                className={`me-20 ${classes.btn} ${classes.btn_aluno} ${classes.btn_hover__white}`}
                                             >
-                                                <FaSearch />
-                                            </buton>
-                                            <form className="search-form">
-                                                <input
-                                                    className="search-input"
-                                                    type="search"
-                                                    name="search"
-                                                    placeholder="Search"
-                                                />
-                                                <button
-                                                    className="search-inner__btn"
-                                                    type="submit"
-                                                >
-                                                    <FaSearch />
-                                                </button>
-                                            </form>
+                                                <span>Área do Aluno</span>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </nav>

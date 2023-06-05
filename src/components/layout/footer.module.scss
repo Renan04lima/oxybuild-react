@@ -2,30 +2,30 @@
 @import '../../styles/abstract/custom-mixins';
 
 .bg {
-    background-image: url('/images/footer/bg/1-1-1920x454.png');
+    background-color: $cinza;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 .logo {
     padding-bottom: 20px;
     display: block;
 }
 .desc {
-    margin-bottom: 25px;
-    color: #cfe1ff;
+    margin-bottom: 5px;
+    color: $white;
     font-size: 16px;
 }
 .inquary {
     &_info {
         margin-bottom: 5px;
-        color: $primary;
+        color: $secondary;
         font-size: 18px;
         line-height: 1.2;
     }
     &_number {
-        color: #cfe1ff;
+        color: $white;
         font-size: 20px;
         &:hover {
             color: $white;
@@ -37,12 +37,16 @@
         .widget {
             &_address,
             &_number {
-                color: #cfe1ff;
+                color: $white;
             }
             &_address {
                 margin-bottom: 5px;
                 font-size: 18px;
                 line-height: 1.5;
+                span {
+                    color: $secondary;
+                    font-weight: bold;
+                }
             }
             &_number {
                 font-size: 16px;
@@ -62,7 +66,7 @@
                 padding-bottom: 15px;
             }
             a {
-                color: #cfe1ff;
+                color: $white;
                 font-size: 18px;
                 &:hover {
                     color: $white;
@@ -72,7 +76,7 @@
     }
 }
 .bottom {
-    background-color: #00225a;
+    background-color: $primary;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -83,18 +87,18 @@
         padding-bottom: 10px;
     }
     li {
-        border: 1px solid #415981;
+        border: 1px solid white;
         text-align: center;
         &:not(:last-child) {
             margin-right: 20px;
         }
         a {
-            color: #cfe1ff;
+            color: $white;
             padding: 5px 10px;
             display: flex;
             align-items: center;
             &:hover {
-                color: $primary;
+                color: $secondary;
             }
         }
     }
@@ -111,18 +115,18 @@
             flex-wrap: wrap;
         }
         &.text {
-            color: #cfe1ff;
+            color: $white;
         }
         &.icon {
-            color: #dc3545;
+            color: $secondary;
             margin-left: 5px;
             margin-right: 5px;
         }
         a {
-            color: #cfe1ff;
+            color: $white;
             margin-left: 5px;
             &:hover {
-                color: #dc3545;
+                color: #5823ad;
             }
         }
     }

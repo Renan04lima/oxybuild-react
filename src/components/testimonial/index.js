@@ -67,18 +67,13 @@ function Testimonial({ testimonialItems, testimonialSectionItems, settings }) {
                                     {item?.subTitle}
                                 </span>
                                 <h2 className={classes.title}>{item?.title}</h2>
-                                <p
-                                    className={classes.desc}
-                                    dangerouslySetInnerHTML={{
-                                        __html: item.desc,
-                                    }}
-                                />
+
                                 <div className="btn-wrap">
                                     <Link
                                         href="/"
                                         className={classes.section__btn}
                                     >
-                                        view more
+                                        Ler depoimentos completos
                                     </Link>
                                 </div>
                             </div>

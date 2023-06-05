@@ -24,14 +24,17 @@
 .subtitle {
     font-family: $rajdhani;
     font-size: 24px;
+    font-weight: bolder;
     line-height: 30px;
     display: block;
-    color: $primary;
+    color: $white;
     position: relative;
     padding-left: 100px;
     margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(89, 91, 89, 0.99);
+
     &:before {
-        background-color: $primary;
+        background-color: $white;
         width: 80px;
         height: 1px;
         position: absolute;
@@ -45,8 +48,9 @@
     h2 {
         font-size: 88px;
         line-height: 85px;
-        font-weight: 700;
+        font-weight: bolder;
         max-width: 57%;
+        color: $white;
         @include breakpoint(max-xl-device) {
             max-width: 85%;
         }
@@ -60,12 +64,14 @@
         span {
             color: $primary;
         }
+        text-shadow: 4px 4px 8px rgba(220, 222, 220, 0.9);
     }
 }
 .desc {
     margin-bottom: 35px;
-    max-width: 520px;
+    max-width: 55%;
     font-size: 20px;
+    color: $verde;
 }
 .btn {
     &_wrap {

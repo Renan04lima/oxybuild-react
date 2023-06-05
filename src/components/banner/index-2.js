@@ -38,7 +38,7 @@ function BannerTwo({ bannerTwoItems }) {
                                             href="/projects"
                                             className={`me-20 ${classes.btn} ${classes.btn_primary} ${classes.btn_hover__white}`}
                                         >
-                                            Learn More
+                                            Conheça
                                         </Link>
                                     </div>
                                 </div>

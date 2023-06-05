@@ -1,6 +1,6 @@
 ---
 id: 'team-section-01'
-subTitle: 'Team'
-title: 'Our Talented Team members'
-desc: 'Construction of itself, because it is pain, but <br/> because some proper style design occur in toil and pain pleasure we have expert team'
+subTitle: 'TURMAS'
+title: 'Turmas com idades mistas'
+desc: 'Ao interagir com crianças de diferentes idades, os alunos têm a oportunidade de desenvolver suas habilidades sociais e emocionais. Eles aprendem a se comunicar, a resolver conflitos, a compartilhar e a colaborar.'
 ---

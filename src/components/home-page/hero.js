@@ -48,13 +48,7 @@ function Hero({ heroItems, settings }) {
                             >
                                 <Link
                                     href="/projects/project-fullwidth"
-                                    className={`me-20 ${classes.btn} ${classes.btn_secondary} ${classes.btn_hover__white}`}
-                                >
-                                    {heroItem?.btnSecondaryText}
-                                </Link>
-                                <Link
-                                    href="/contact"
-                                    className={`${classes.btn} ${classes.btn_primary} ${classes.btn_hover__white}`}
+                                    className={`me-20 ${classes.btn} ${classes.btn_primary} ${classes.btn_hover__white}`}
                                 >
                                     {heroItem?.btnPrimaryText}
                                 </Link>
