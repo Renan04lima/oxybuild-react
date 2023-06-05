@@ -61,7 +61,7 @@ function Header() {
                             <Col
                                 xl={{ span: 4, offset: 2 }}
                                 lg={{ span: 5, offset: 3 }}
-                                className="d-none d-lg-block"
+                                className="d-none d-lg-block d-lg-none"
                             >
                                 <div className={classes.info}>
                                     <div className={classes.contact_number}>
@@ -92,41 +92,17 @@ function Header() {
                                     </Link>
                                 </div>
                             </Col>
-                            <Col xl={6} lg={4} sm={6}>
+                            <Col
+                                xl={6}
+                                lg={4}
+                                sm={6}
+                                className="d-block d-lg-none"
+                            >
                                 <div className={classes.right}>
                                     <div>
                                         <Link href="/login-register">
-                                            Login
-                                            <span>/ Register</span>
+                                            Área do Aluno
                                         </Link>
-                                    </div>
-                                    <div
-                                        className={`${
-                                            search
-                                                ? 'search-show'
-                                                : 'search-hide'
-                                        } d-block d-lg-none search-holder`}
-                                    >
-                                        <buton
-                                            className={classes.search__btn}
-                                            onClick={SearchToggle}
-                                        >
-                                            <FaSearch />
-                                        </buton>
-                                        <form className="search-form">
-                                            <input
-                                                className="search-input"
-                                                type="search"
-                                                name="search"
-                                                placeholder="Search"
-                                            />
-                                            <button
-                                                className="search-inner__btn"
-                                                type="submit"
-                                            >
-                                                <FaSearch />
-                                            </button>
-                                        </form>
                                     </div>
                                     <div className={classes.offcanvas}>
                                         <buton
@@ -181,19 +157,9 @@ function Header() {
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
-                                            <Link href="/about">
-                                                <span>Quem Somos</span>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/services">
-                                                <span>Service</span>
-                                            </Link>
-                                        </li>
                                         <li className={classes.dropdown_holder}>
                                             <Link href="/projects/project-fullwidth">
-                                                <span>Metodologias</span>
+                                                <span>Etapas de Ensino</span>
                                             </Link>
                                             <ul
                                                 className={
@@ -202,64 +168,22 @@ function Header() {
                                             >
                                                 <li>
                                                     <Link href="/projects/project-2-columns">
-                                                        Turma 1
+                                                        Materna
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/projects/project-gallery">
-                                                        Turma 2
+                                                        Ninho I
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/projects/project-slider">
-                                                        Turma 3
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className={classes.dropdown_holder}>
-                                            <Link href="/">
-                                                <span>Pages</span>
-                                            </Link>
-                                            <ul
-                                                className={
-                                                    classes.dropdown_menu
-                                                }
-                                            >
-                                                <li>
-                                                    <Link href="/our-clients">
-                                                        Our Clients
+                                                        Ninho II
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/our-team">
-                                                        Our Team
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/our-working-process">
-                                                        Our Working Process
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className={classes.dropdown_holder}>
-                                            <Link href="/blogs/blog-fullwidth">
-                                                <span>Blogs</span>
-                                            </Link>
-                                            <ul
-                                                className={
-                                                    classes.dropdown_menu
-                                                }
-                                            >
-                                                <li>
-                                                    <Link href="/blogs/blog-leftsidebar">
-                                                        Blog Left Sidebar
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/blogs/blog-rightsidebar">
-                                                        Blog Right Sidebar
+                                                    <Link href="/projects/project-slider">
+                                                        Ciclo I
                                                     </Link>
                                                 </li>
                                             </ul>
@@ -280,22 +204,8 @@ function Header() {
                                                 className={classes.search__btn}
                                                 onClick={SearchToggle}
                                             >
-                                                <FaSearch />
+                                                Área do Aluno
                                             </buton>
-                                            <form className="search-form">
-                                                <input
-                                                    className="search-input"
-                                                    type="search"
-                                                    name="search"
-                                                    placeholder="Search"
-                                                />
-                                                <button
-                                                    className="search-inner__btn"
-                                                    type="submit"
-                                                >
-                                                    <FaSearch />
-                                                </button>
-                                            </form>
                                         </li>
                                     </ul>
                                 </nav>
