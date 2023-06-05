@@ -50,7 +50,8 @@
 .desc {
     margin-bottom: 40px;
     max-width: 480px;
-    color: $white;
+    color: $cinza;
+    text-shadow: 2px 2px 4px rgba(220, 222, 220, 0.9);
 }
 .with {
     &__sticker {

@@ -2,7 +2,7 @@
 id: 'footer-01'
 footerLogo: '/images/logo/white.png'
 footerLogoAlt: 'Footer Logo'
-excerpt: 'Favorecemos o desenvolvimento integral e humano da criança'
+excerpt: 'Desenvolvimento integral e humano da criança'
 
 widgetAddress: 'R. Domingos Zanin, 91 - Carmo, Araraquara - <span class="text-primary"> Campus</span>'
 widgetNumber: '(16) 9 8214 1310'

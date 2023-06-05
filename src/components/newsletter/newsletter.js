@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Col, Container, Row } from 'react-bootstrap';
+import Link from 'next/link';
 import classes from './newsletter.module.scss';
 
 function Newsletter({ newsletterItems }) {
@@ -13,21 +14,12 @@ function Newsletter({ newsletterItems }) {
                                 <h2 className={classes.title}>
                                     {newsletterItem?.title}
                                 </h2>
-                                <form className={classes.form}>
-                                    <input
-                                        className={classes.input_field}
-                                        type="email"
-                                        placeholder="To get update, enter your email"
-                                    />
-                                    <div className={classes.btn__wrap}>
-                                        <button
-                                            type="submit"
-                                            className={`${classes.btn} ${classes.btn_secondary} ${classes.btn_hover__white}`}
-                                        >
-                                            Subscribe now
-                                        </button>
-                                    </div>
-                                </form>
+                                <Link
+                                    href="/contact"
+                                    className={`${classes.btn} ${classes.btn_whatsapp} ${classes.btn_hover__whatsapp}`}
+                                >
+                                    {newsletterItem?.btnPrimaryText}
+                                </Link>
                             </div>
                         </Col>
                     ))}
