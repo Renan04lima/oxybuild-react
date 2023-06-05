@@ -6,7 +6,7 @@ excerpt: 'A educação Montessori oferece liberdade para aprender, crescer com c
 
 widgetAddress: 'R. Domingos Zanin, 91 - Carmo, Araraquara - <span class="text-primary"> Campus</span>'
 widgetNumber: '(16) 9 8214 1310'
-additionWidgetAddress: 'Av. Dr. Gastão Vidigal, 62 - Fonte, Araraquara - <span class="text-primary">Materna</span>'
+additionWidgetAddress: 'Av. Dr. Gastão Vidigal, 62 - Fonte, Araraquara - <span class="text-primary">Dei Bambini</span>'
 additionWidgetNumber: '(16) 9 8214 1310'
 socialList:
     [

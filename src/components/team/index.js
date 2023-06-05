@@ -66,36 +66,6 @@ function Team({ teamItems, teamSectionItems, settings }) {
                                             <ul className={classes.add__action}>
                                                 <li
                                                     className={
-                                                        classes.social_link__wrap
-                                                    }
-                                                >
-                                                    <Link href="https://www.example.com">
-                                                        <FaShareAlt />
-                                                    </Link>
-                                                    <ul
-                                                        className={
-                                                            classes.social_link
-                                                        }
-                                                    >
-                                                        <li>
-                                                            <Link href="https://www.example.com">
-                                                                <FaTiktok />
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link href="https://www.example.com">
-                                                                <FaInstagram />
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link href="https://www.example.com">
-                                                                <FaFacebookF />
-                                                            </Link>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li
-                                                    className={
                                                         classes.mail_link__wrap
                                                     }
                                                 >

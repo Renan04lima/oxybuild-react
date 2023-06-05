@@ -50,6 +50,7 @@
         line-height: 85px;
         font-weight: bolder;
         max-width: 57%;
+        color: $white;
         @include breakpoint(max-xl-device) {
             max-width: 85%;
         }
