@@ -7,6 +7,7 @@ import {
     FaFacebookF,
     FaTwitter,
     FaInstagram,
+    FaTiktok,
 } from 'react-icons/fa';
 import { IoAddOutline } from 'react-icons/io5';
 import classes from './team.module.scss';
@@ -84,12 +85,7 @@ function Team({ teamItems, teamSectionItems, settings }) {
                                                     >
                                                         <li>
                                                             <Link href="https://www.example.com">
-                                                                <FaFacebookF />
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link href="https://www.example.com">
-                                                                <FaTwitter />
+                                                                <FaTiktok />
                                                             </Link>
                                                         </li>
                                                         <li>
@@ -97,21 +93,12 @@ function Team({ teamItems, teamSectionItems, settings }) {
                                                                 <FaInstagram />
                                                             </Link>
                                                         </li>
+                                                        <li>
+                                                            <Link href="https://www.example.com">
+                                                                <FaFacebookF />
+                                                            </Link>
+                                                        </li>
                                                     </ul>
-                                                </li>
-                                                <li
-                                                    className={
-                                                        classes.mail_link__wrap
-                                                    }
-                                                >
-                                                    <Link
-                                                        href="mailto://info@example.com"
-                                                        className={
-                                                            classes.mail_link
-                                                        }
-                                                    >
-                                                        <IoAddOutline />
-                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>

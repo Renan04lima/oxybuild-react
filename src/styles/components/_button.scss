@@ -1,7 +1,7 @@
 /* ---Button--- */
 .btn {
     transition: $baseTransition;
-    border-radius: 0;
+    border-radius: 10px;
     width: 170px;
     height: 60px;
     line-height: 60px;
@@ -60,6 +60,11 @@
             position: relative;
             left: 30%;
         }
+    }
+
+    &_aluno {
+        color: $verdao;
+        font-size: 56px;
     }
 
     &_hover {

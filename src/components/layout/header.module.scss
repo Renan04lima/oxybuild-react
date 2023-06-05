@@ -4,10 +4,12 @@
 .area {
     position: relative;
 }
+
 .top {
-    background-color: $primary;
+    background-color: $secondary;
     padding-top: 15px;
     padding-bottom: 15px;
+
     a,
     span {
         font-family: $rajdhani;
@@ -17,68 +19,87 @@
         color: $white;
     }
 }
+
 .info {
     display: flex;
+
     img {
         vertical-align: middle;
     }
+
     .contact_number {
         padding-right: 80px;
         padding-left: 15px;
     }
 }
+
 .right {
     display: flex;
     justify-content: flex-end;
+    font-weight: bolder;
     align-items: center;
     height: 100%;
+
     @include breakpoint(max-xs-device) {
         padding-top: 20px;
         justify-content: center;
     }
+
     div {
         &:not(:last-child) {
             margin-right: 20px;
         }
     }
+
     span {
         color: #e5e5e5;
+        font-weight: bolder;
     }
 }
+
 .main {
-    background-color: #a4ca46;
+    background-color: $verde;
 }
+
 .menu {
     &__list {
+        font-weight: bolder;
         display: flex;
         justify-content: center;
+
         @include breakpoint(max-lg-device) {
             justify-content: flex-end;
         }
+
         > li {
             display: inline-block;
             position: relative;
             &:not(:nth-last-child(2)) {
                 margin-right: 55px;
+
                 @include breakpoint(max-lg-device) {
                     margin-right: 30px;
                 }
             }
+
             &:last-child {
                 margin-right: 0;
             }
+
             > a {
                 transition: $baseTransition;
                 font-family: $rajdhani;
-                font-weight: 600;
+                font-weight: bold;
                 color: $white;
                 display: block;
                 padding-top: 30px;
                 padding-bottom: 30px;
                 font-size: 20px;
+
                 span {
                     position: relative;
                     display: block;
+
                     &:before {
                         background-color: $primary;
                         content: '';
@@ -93,9 +114,11 @@
                     }
                 }
             }
+
             &:hover {
                 > a {
                     color: $primary;
+
                     span {
                         &:before {
                             width: 100%;
@@ -105,8 +128,10 @@
                     }
                 }
             }
+
             &.separator {
                 padding-right: 35px;
+
                 a {
                     span {
                         background-image: url(../../../public/images/header/icon/separator.png);
@@ -115,8 +140,37 @@
                         background-size: contain;
                         padding-right: 35px;
                         display: inline-block;
+
                         &:before {
                             width: calc(100% - 35px);
+                        }
+                    }
+                }
+            }
+            &.login {
+                a {
+                    span {
+                        background-color: $primary;
+                        color: $white;
+                        width: 170px;
+                        height: 35px;
+                        line-height: 35px;
+                        padding: 0;
+                        border-radius: 10px;
+                        margin-top: -5%;
+                        transition: $baseTransition;
+                        padding: 0;
+                        font-size: 24px;
+
+                        text-align: center;
+                        display: inline-block;
+
+                        &:hover {
+                            background-color: $white;
+                            color: $secondary;
+                        }
+                        &:before {
+                            width: calc(0%);
                         }
                     }
                 }
@@ -124,6 +178,7 @@
         }
     }
 }
+
 .search {
     &__btn {
         display: flex;
@@ -133,6 +188,7 @@
         color: $white;
     }
 }
+
 .offcanvas {
     &__btn {
         display: flex;
@@ -142,6 +198,7 @@
         color: $white;
     }
 }
+
 /* -Header Logo- */
 .logo {
     @include breakpoint(max-sm-device) {
@@ -149,6 +206,7 @@
         justify-content: center;
     }
 }
+
 /* -Fixed Logo- */
 .fixed {
     &__logo {
@@ -161,19 +219,24 @@
         display: flex;
         -webkit-box-align: center;
         align-items: center;
+
         @include breakpoint(xxl-device) {
             width: 17%;
         }
+
         @include breakpoint(max-xl-device) {
             width: 17%;
         }
+
         .logo {
             margin: auto 90px auto auto;
             display: block;
+
             @include breakpoint(xxl-device) {
                 width: calc(100% - 60px);
                 margin: 0 auto;
             }
+
             @include breakpoint(max-xl-device) {
                 width: calc(100% - 60px);
                 margin: 0 auto;
@@ -186,6 +249,7 @@
 .dropdown {
     &_holder {
         position: relative;
+
         &:hover {
             .dropdown {
                 &_menu {
@@ -196,9 +260,10 @@
             }
         }
     }
+
     &_menu {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        background-color: $white;
+        background-color: rgba(220, 222, 220, 0.6);
         position: absolute;
         visibility: hidden;
         opacity: 0;
@@ -210,22 +275,28 @@
         padding-top: 25px;
         padding-bottom: 25px;
         text-align: left;
+        font-size: 20px;
+        font-weight: bolder;
         z-index: 2;
+
         @include breakpoint(max-lg-device) {
             left: auto;
             right: 0;
         }
+
         > li {
             &:not(:last-child) {
                 padding-bottom: 10px;
             }
+
             &:hover {
                 > a {
-                    color: $primary;
+                    color: $secondary;
                 }
             }
+
             > a {
-                color: $secondary;
+                color: $primary;
             }
         }
     }

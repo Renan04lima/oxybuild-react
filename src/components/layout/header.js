@@ -101,7 +101,7 @@ function Header() {
                                 <div className={classes.right}>
                                     <div>
                                         <Link href="/login-register">
-                                            Área do Alunoo
+                                            Área do Aluno
                                         </Link>
                                     </div>
                                     <div className={classes.offcanvas}>
@@ -193,19 +193,13 @@ function Header() {
                                                 <span>Fale Conosco</span>
                                             </Link>
                                         </li>
-                                        <li
-                                            className={`${
-                                                search
-                                                    ? 'search-show'
-                                                    : 'search-hide'
-                                            }`}
-                                        >
-                                            <buton // ISSUE: trocar por botão semelhante ao layout anterior
-                                                className={classes.search__btn}
-                                                onClick={SearchToggle}
+                                        <li className={classes.login}>
+                                            <Link
+                                                href="/login-register"
+                                                className={`me-20 ${classes.btn} ${classes.btn_aluno} ${classes.btn_hover__white}`}
                                             >
-                                                Área do Aluno
-                                            </buton>
+                                                <span>Área do Aluno</span>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </nav>
