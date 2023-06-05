@@ -27,70 +27,29 @@ function Footer({ footerItems }) {
                                                 __html: footerItem?.excerpt,
                                             }}
                                         />
-                                        <div className={classes.inquary}>
-                                            <h2
-                                                className={classes.inquary_info}
-                                            >
-                                                {footerItem?.inquary}
-                                            </h2>
-                                            <Link
-                                                href="tel://+12345-879-854"
-                                                className={
-                                                    classes.inquary_number
-                                                }
-                                            >
-                                                {footerItem?.inquaryNumber}
-                                            </Link>
-                                        </div>
                                     </div>
                                 </Col>
                                 <Col
                                     xl={{ span: 3 }}
                                     lg={{ span: 2 }}
                                     sm={{ span: 6 }}
-                                    className="ps-xl-80 pt-40 pt-lg-0"
+                                    className="d-lg-block"
                                 >
                                     <div className={classes.widget__item}>
                                         <h2 className={classes.widget__title}>
                                             {footerItem?.informationTitle}
                                         </h2>
-                                        <ul className={classes.widget__list}>
-                                            {footerItem?.informationList?.map(
-                                                (item) => (
-                                                    <li key={item.id}>
-                                                        <Link
-                                                            href={`/${item.path}`}
-                                                        >
-                                                            {item.title}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            )}
-                                        </ul>
                                     </div>
                                 </Col>
                                 <Col
                                     lg={{ span: 3 }}
                                     sm={{ span: 6 }}
-                                    className="ps-lg-50 pt-40 pt-lg-0"
+                                    className="d-lg-block"
                                 >
                                     <div className={classes.widget__item}>
                                         <h2 className={classes.widget__title}>
                                             {footerItem?.quickLinkTitle}
                                         </h2>
-                                        <ul className={classes.widget__list}>
-                                            {footerItem?.quickLinkList?.map(
-                                                (item) => (
-                                                    <li key={item.id}>
-                                                        <Link
-                                                            href={`/${item.path}`}
-                                                        >
-                                                            {item.title}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            )}
-                                        </ul>
                                     </div>
                                 </Col>
                                 <Col
@@ -166,14 +125,14 @@ function Footer({ footerItems }) {
                                 <Col md={{ span: 6 }} sm={{ span: 8 }}>
                                     <div className={classes.copyright}>
                                         <span className={classes.text}>
-                                            © {new Date().getFullYear()}{' '}
-                                            OxyBuild Made with
+                                            © {new Date().getFullYear()} Quintal
+                                            de Gaya
                                             <span className={classes.icon}>
                                                 <FaIcons.FaHeart />
                                             </span>
-                                            by
-                                            <a href="https://hasthemes.com/">
-                                                HasThemes
+                                            criado por
+                                            <a href="https://otuti.com.br/">
+                                                OTUTI
                                             </a>
                                         </span>
                                     </div>

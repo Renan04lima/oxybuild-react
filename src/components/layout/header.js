@@ -101,7 +101,7 @@ function Header() {
                                 <div className={classes.right}>
                                     <div>
                                         <Link href="/login-register">
-                                            Área do Aluno
+                                            Área do Alunoo
                                         </Link>
                                     </div>
                                     <div className={classes.offcanvas}>
