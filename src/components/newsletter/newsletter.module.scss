@@ -19,6 +19,15 @@
         align-items: center;
         width: calc(100% - 65px);
     }
+    .icon {
+        color: $white;
+        position: relative;
+        top: 10%;
+        margin-left: 2px;
+    }
+    .texto {
+        font-size: 12px;
+    }
 }
 .title {
     position: relative;

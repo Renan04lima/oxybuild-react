@@ -50,6 +50,10 @@ function Header() {
             [id.toString()]: !prevData[id.toString()],
         }));
 
+    const handleEntrarClick = () => {
+        window.open('https://quintaldegaya.paineldoaluno.com.br/', '_blank');
+    };
+
     // End here
 
     return (
@@ -100,7 +104,7 @@ function Header() {
                             >
                                 <div className={classes.right}>
                                     <div>
-                                        <Link href="/login-register">
+                                        <Link href="https://quintaldegaya.paineldoaluno.com.br/">
                                             Área do Aluno
                                         </Link>
                                     </div>
@@ -132,7 +136,7 @@ function Header() {
                                             </Link>
                                         </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/projects/project-fullwidth">
+                                            <Link href="/blank">
                                                 <span>O Quintal</span>
                                             </Link>
                                             <ul
@@ -141,24 +145,24 @@ function Header() {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/projects/project-2-columns">
+                                                    <Link href="/blank">
                                                         Quem Somos
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/projects/project-gallery">
+                                                    <Link href="/blank">
                                                         Unidades
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/projects/project-slider">
+                                                    <Link href="/blank">
                                                         Matrículas
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/projects/project-fullwidth">
+                                            <Link href="/blank">
                                                 <span>Etapas de Ensino</span>
                                             </Link>
                                             <ul
@@ -167,35 +171,35 @@ function Header() {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/projects/project-2-columns">
+                                                    <Link href="/blank">
                                                         Materna
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/projects/project-gallery">
+                                                    <Link href="/blank">
                                                         Ninho I
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/projects/project-slider">
+                                                    <Link href="/blank">
                                                         Ninho II
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/projects/project-slider">
+                                                    <Link href="/blank">
                                                         Ciclo I
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className={classes.separator}>
-                                            <Link href="/contact">
+                                            <Link href="/blank">
                                                 <span>Fale Conosco</span>
                                             </Link>
                                         </li>
                                         <li className={classes.login}>
                                             <Link
-                                                href="/login-register"
+                                                href="https://quintaldegaya.paineldoaluno.com.br/"
                                                 className={`me-20 ${classes.btn} ${classes.btn_aluno} ${classes.btn_hover__white}`}
                                             >
                                                 <span>Área do Aluno</span>

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
+import { FaWhatsapp } from 'react-icons/fa';
 import classes from './newsletter.module.scss';
 
 function Newsletter({ newsletterItems }) {
@@ -18,6 +19,8 @@ function Newsletter({ newsletterItems }) {
                                     href="/contact"
                                     className={`${classes.btn} ${classes.btn_whatsapp} ${classes.btn_hover__whatsapp}`}
                                 >
+                                    <FaWhatsapp className={classes.icon} />
+                                    <span> </span>
                                     {newsletterItem?.btnPrimaryText}
                                 </Link>
                             </div>

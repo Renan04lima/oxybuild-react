@@ -2,7 +2,7 @@
 id: 'footer-01'
 footerLogo: '/images/logo/white.png'
 footerLogoAlt: 'Footer Logo'
-excerpt: 'Desenvolvimento integral e humano da criança'
+excerpt: 'A educação Montessori oferece liberdade para aprender, crescer com confiança e alcançar todo o potencial.'
 
 widgetAddress: 'R. Domingos Zanin, 91 - Carmo, Araraquara - <span class="text-primary"> Campus</span>'
 widgetNumber: '(16) 9 8214 1310'
