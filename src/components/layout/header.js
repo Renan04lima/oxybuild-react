@@ -150,19 +150,19 @@ function Header() {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/blank">
+                                                    <Link href="/about">
                                                         Unidades
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/blank">
+                                                    <Link href="/about">
                                                         Matrículas
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/blank">
+                                            <Link href="/about">
                                                 <span>Etapas de Ensino</span>
                                             </Link>
                                             <ul
@@ -171,29 +171,29 @@ function Header() {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/blank">
+                                                    <Link href="/materna">
                                                         Materna
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/blank">
+                                                    <Link href="/materna">
                                                         Ninho I
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/blank">
+                                                    <Link href="/materna">
                                                         Ninho II
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/blank">
+                                                    <Link href="/404">
                                                         Ciclo I
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className={classes.separator}>
-                                            <Link href="/blank">
+                                            <Link href="/contact">
                                                 <span>Fale Conosco</span>
                                             </Link>
                                         </li>

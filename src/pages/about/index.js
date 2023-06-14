@@ -18,8 +18,6 @@ function AboutPage({
     projectSectionItems,
     teamItems,
     teamSectionItems,
-    testimonialItems,
-    testimonialSectionItems,
     newsletterItems,
     footerItems,
 }) {
@@ -32,11 +30,6 @@ function AboutPage({
                     content="Quintal de Gaya - Escola Montessori"
                 />
             </Head>
-            <Breadcrumb
-                subTitle="What we do"
-                title="About us"
-                desc="Construction of itself, because it is pain some proper style design occur are pleasure"
-            />
             <AboutOne aboutItems={aboutItems} />
             <BannerThree bannerThreeItems={bannerThreeItems} />
             <CounterTwo />
@@ -45,10 +38,6 @@ function AboutPage({
                 projectSectionItems={projectSectionItems}
             />
             <Team teamItems={teamItems} teamSectionItems={teamSectionItems} />
-            <Testimonial
-                testimonialItems={testimonialItems}
-                testimonialSectionItems={testimonialSectionItems}
-            />
             <Newsletter newsletterItems={newsletterItems} />
             <Footer footerItems={footerItems} />
         </>
@@ -63,8 +52,6 @@ export function getStaticProps() {
     const LatestProject = getFeaturedItems(projects);
     const teamSectionItems = getAllItems('team-section');
     const teamItems = getAllItems('team');
-    const testimonialSectionItems = getAllItems('testimonial-section');
-    const testimonialItems = getAllItems('testimonial');
     const newsletterItems = getAllItems('newsletter');
     const footerItems = getAllItems('footer');
 
@@ -75,8 +62,6 @@ export function getStaticProps() {
             projectSectionItems,
             projects: LatestProject,
             teamSectionItems,
-            testimonialItems,
-            testimonialSectionItems,
             teamItems,
             newsletterItems,
             footerItems,
@@ -92,8 +77,6 @@ AboutPage.propTypes = {
     teamItems: PropTypes.instanceOf(Object).isRequired,
     newsletterItems: PropTypes.instanceOf(Object).isRequired,
     teamSectionItems: PropTypes.instanceOf(Object).isRequired,
-    testimonialItems: PropTypes.instanceOf(Object).isRequired,
-    testimonialSectionItems: PropTypes.instanceOf(Object).isRequired,
     footerItems: PropTypes.instanceOf(Object).isRequired,
 };
 

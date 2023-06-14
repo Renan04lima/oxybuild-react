@@ -17,8 +17,6 @@ function HomePage({
     bannerTwoItems,
     teamItems,
     teamSectionItems,
-    testimonialItems,
-    testimonialSectionItems,
 
     newsletterItems,
     footerItems,
@@ -37,10 +35,6 @@ function HomePage({
             <AboutOne aboutItems={homeItems} />
             <BannerTwo bannerTwoItems={bannerTwoItems} />
             <Team teamItems={teamItems} teamSectionItems={teamSectionItems} />
-            <Testimonial
-                testimonialItems={testimonialItems}
-                testimonialSectionItems={testimonialSectionItems}
-            />
 
             <Footer footerItems={footerItems} />
         </>
@@ -61,8 +55,6 @@ export function getStaticProps() {
     const bannerTwoItems = getAllItems('banner-2');
     const teamItems = getAllItems('team');
     const teamSectionItems = getAllItems('team-section');
-    const testimonialItems = getAllItems('testimonial');
-    const testimonialSectionItems = getAllItems('testimonial-section');
     const blogSectionItems = getAllItems('blog-section');
     const blogs = getAllItems('blogs');
     const LatestBlog = getFeaturedItems(blogs);
@@ -82,8 +74,6 @@ export function getStaticProps() {
             bannerTwoItems,
             teamItems,
             teamSectionItems,
-            testimonialItems,
-            testimonialSectionItems,
             blogSectionItems,
             blogs: LatestBlog,
             newsletterItems,
@@ -98,8 +88,6 @@ HomePage.propTypes = {
     bannerTwoItems: PropTypes.instanceOf(Object).isRequired,
     teamItems: PropTypes.instanceOf(Object).isRequired,
     teamSectionItems: PropTypes.instanceOf(Object).isRequired,
-    testimonialItems: PropTypes.instanceOf(Object).isRequired,
-    testimonialSectionItems: PropTypes.instanceOf(Object).isRequired,
     newsletterItems: PropTypes.instanceOf(Object).isRequired,
     footerItems: PropTypes.instanceOf(Object).isRequired,
 };
