@@ -12,7 +12,7 @@ import { getAllItems, getFeaturedItems } from '../lib/items-util';
 function HomePage({
     heroItems,
 
-    aboutItems,
+    homeItems,
 
     bannerTwoItems,
     teamItems,
@@ -34,7 +34,7 @@ function HomePage({
             </Head>
             <Hero heroItems={heroItems} />
             <Newsletter newsletterItems={newsletterItems} />
-            <AboutOne aboutItems={aboutItems} />
+            <AboutOne aboutItems={homeItems} />
             <BannerTwo bannerTwoItems={bannerTwoItems} />
             <Team teamItems={teamItems} teamSectionItems={teamSectionItems} />
             <Testimonial
@@ -50,7 +50,7 @@ function HomePage({
 export function getStaticProps() {
     const heroItems = getAllItems('heros');
     const bannerItems = getAllItems('banner');
-    const aboutItems = getAllItems('about');
+    const homeItems = getAllItems('home');
     const projectSectionItems = getAllItems('project-section');
     const projects = getAllItems('projects');
     const LatestProject = getFeaturedItems(projects);
@@ -73,7 +73,7 @@ export function getStaticProps() {
         props: {
             heroItems,
             bannerItems,
-            aboutItems,
+            homeItems,
             projectSectionItems,
             projects: LatestProject,
             brandItems,
@@ -94,7 +94,7 @@ export function getStaticProps() {
 
 HomePage.propTypes = {
     heroItems: PropTypes.instanceOf(Object).isRequired,
-    aboutItems: PropTypes.instanceOf(Object).isRequired,
+    homeItems: PropTypes.instanceOf(Object).isRequired,
     bannerTwoItems: PropTypes.instanceOf(Object).isRequired,
     teamItems: PropTypes.instanceOf(Object).isRequired,
     teamSectionItems: PropTypes.instanceOf(Object).isRequired,

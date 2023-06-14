@@ -136,7 +136,7 @@ function Header() {
                                             </Link>
                                         </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/blank">
+                                            <Link href="/about">
                                                 <span>O Quintal</span>
                                             </Link>
                                             <ul
@@ -145,7 +145,7 @@ function Header() {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/blank">
+                                                    <Link href="/about">
                                                         Quem Somos
                                                     </Link>
                                                 </li>
