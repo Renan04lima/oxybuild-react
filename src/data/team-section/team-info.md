@@ -1,6 +1,6 @@
 ---
 id: 'team-section-01'
-subTitle: 'TURMAS'
-title: 'Turmas com idades mistas'
-desc: 'Ao interagir com crianças de diferentes idades, os alunos têm a oportunidade de desenvolver suas habilidades sociais e emocionais. Eles aprendem a se comunicar, a resolver conflitos, a compartilhar e a colaborar.'
+subTitle: 'ABOUT US'
+title: 'We construct your needs'
+desc: 'Lorem ipsum dolor sit amet. Et tempora officiis hic consequatur autem qui numquam perferendis ut earum consequatur eum accusamus explicabo qui tenetur nisi quo doloremque atque.'
 ---

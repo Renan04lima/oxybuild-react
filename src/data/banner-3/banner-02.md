@@ -1,9 +1,9 @@
 ---
 id: 'banner-02'
-title: 'Our Vision'
-excerpt: 'Top rated construction packages we provide page editors now use Lorem as their default model text'
+title: 'Visão'
+excerpt: 'Lorem ipsum dolor sit amet. Et tempora officiis hic consequatur autem qui numquam perferendis ut earum consequatur eum accusamus explicabo qui tenetur nisi quo doloremque atque.'
 path: '/projects'
 dataCount: '02'
-dynamicClassName: 'item primary__bg'
+dynamicClassName: 'item ternary__bg'
 btnText: 'Read more'
 ---

@@ -34,8 +34,10 @@ function LatestProject({ projects, projectSectionItems, settings }) {
         <div>
             <div className={classes.bg}>
                 <div className={classes.btn__wrap}>
-                    <Link href="/projects" className={classes.btn}>
-                        <span>View More</span>
+                    <Link href="#" className={classes.btn}>
+                        <span>Saiba</span>
+                        <br />
+                        <span>mais</span>
                     </Link>
                 </div>
                 <Container fluid className="px-0">
@@ -48,10 +50,9 @@ function LatestProject({ projects, projectSectionItems, settings }) {
                                             key={item.id}
                                             className={classes.section_title}
                                         >
-                                            <span>{item?.subTitle}</span>
                                             <h2
                                                 dangerouslySetInnerHTML={{
-                                                    __html: item?.title,
+                                                    __html: item.type,
                                                 }}
                                             />
                                         </div>
@@ -72,6 +73,18 @@ function LatestProject({ projects, projectSectionItems, settings }) {
                             </div>
                         </div>
                         <div className={classes.slider}>
+                            <div className={classes.section_unit__wrap}>
+                                {projectSectionItems?.map((item) => (
+                                    <div
+                                        key={item.id}
+                                        className={classes.section_unit}
+                                    >
+                                        <span>{item?.subTitle}</span>
+                                        <h2>{item?.title}</h2>
+                                    </div>
+                                ))}
+                            </div>
+
                             <SwiperComps settings={settings}>
                                 {projects.map((project) => (
                                     <Slide

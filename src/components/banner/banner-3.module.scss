@@ -21,6 +21,11 @@
         background-color: $secondary;
     }
 }
+.ternary {
+    &__bg {
+        background-color: $cinza;
+    }
+}
 .primary {
     &__bg {
         background-color: $primary;

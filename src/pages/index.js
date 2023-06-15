@@ -11,13 +11,10 @@ import { getAllItems, getFeaturedItems } from '../lib/items-util';
 
 function HomePage({
     heroItems,
-
     homeItems,
-
     bannerTwoItems,
     teamItems,
     teamSectionItems,
-
     newsletterItems,
     footerItems,
 }) {
@@ -46,8 +43,6 @@ export function getStaticProps() {
     const bannerItems = getAllItems('banner');
     const homeItems = getAllItems('home');
     const projectSectionItems = getAllItems('project-section');
-    const projects = getAllItems('projects');
-    const LatestProject = getFeaturedItems(projects);
     const brandItems = getAllItems('brand');
     const services = getAllItems('services');
     const serviceSectionItems = getAllItems('service-section');
@@ -67,7 +62,6 @@ export function getStaticProps() {
             bannerItems,
             homeItems,
             projectSectionItems,
-            projects: LatestProject,
             brandItems,
             services: HomePageServices,
             serviceSectionItems,

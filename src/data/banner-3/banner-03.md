@@ -1,7 +1,7 @@
 ---
 id: 'banner-03'
-title: 'Our Values'
-excerpt: 'Top rated construction packages we provide page editors now use Lorem as their default model text'
+title: 'Valores'
+excerpt: 'Lorem ipsum dolor sit amet. Et tempora officiis hic consequatur autem qui numquam perferendis ut earum consequatur eum accusamus explicabo qui tenetur nisi quo doloremque atque.'
 path: '/projects'
 dataCount: '03'
 dynamicClassName: 'item secondary__bg'

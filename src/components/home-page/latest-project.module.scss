@@ -2,9 +2,7 @@
 @import '../../styles/abstract/custom-mixins';
 
 .bg {
-    background-image: url('/images/latest-project/bg/1-1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $cinza;
 }
 .slider {
     width: calc(100% - 285px);
@@ -71,8 +69,9 @@
         }
         h2 {
             color: $white;
-            font-size: 60px;
-            line-height: 1;
+            font-size: 40px;
+            font-family: $yantramanav;
+            font-weight: lighter;
             max-width: 425px;
             @include breakpoint(max-sm-device) {
                 font-size: 40px;
@@ -113,12 +112,35 @@
             }
         }
     }
+    &_unit {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        span {
+            font-weight: lighter;
+            color: $white;
+            display: block;
+            font-size: 40px;
+        }
+        h2 {
+            color: $primary;
+            font-size: 80px;
+            max-width: 425px;
+            @include breakpoint(max-sm-device) {
+                font-size: 40px;
+            }
+            @include breakpoint(max-xxs-device) {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 .btn {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     color: $white;
-    padding: 50px;
+    padding: 10px;
     z-index: 1;
     &:before {
         background-color: $primary;
