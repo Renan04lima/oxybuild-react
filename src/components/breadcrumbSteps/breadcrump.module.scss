@@ -2,13 +2,6 @@
 @import '../../styles/abstract/custom-mixins';
 
 .page {
-    &_content {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-bottom: -120px;
-    }
     &_banner {
         &__bg {
             background-image: url('/images/hero/1b.jpg');
@@ -17,31 +10,20 @@
             background-size: cover;
             min-height: 460px;
             display: flex;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding-bottom: 20px;
         }
-    }
-    &_subtitle {
-        font-family: 'Rajdhani', sans-serif;
-        font-size: 24px;
-        line-height: 30px;
-        display: block;
-        position: relative;
-        font-weight: bold;
     }
     &_title {
         color: $white;
         margin-bottom: 5px;
         padding-top: 15px;
         font-size: 40px;
+        text-shadow: 2px 2px 4px rgba(220, 222, 220, 0.9);
         line-height: 0.97;
         @include breakpoint(max-xs-device) {
             font-size: 50px;
         }
-    }
-    &_desc {
-        color: $white;
-        text-shadow: 2px 2px 4px rgba(220, 222, 220, 0.9);
-        max-width: 380px;
-        font-weight: lighter;
     }
 }

@@ -36,10 +36,7 @@ function BannerFour({ bannerFourItems, bannerSection }) {
                                     .map((item) => classes[item])
                                     .join(' ')}
                             >
-                                <div
-                                    className={classes.content}
-                                    data-count={`${bannerFourItem?.dataCount}`}
-                                >
+                                <div className={classes.content}>
                                     <h2
                                         className={classes.title}
                                         dangerouslySetInnerHTML={{

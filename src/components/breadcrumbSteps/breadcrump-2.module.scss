@@ -1,0 +1,19 @@
+@import '../../styles/abstract/custom-variables';
+@import '../../styles/abstract/custom-mixins';
+
+.page {
+    &_banner {
+        &__bg {
+            background-image: url('/images/hero/1a.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 460px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding-bottom: 20px;
+        }
+    }
+    
+}

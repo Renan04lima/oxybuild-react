@@ -35,6 +35,7 @@
         }
     }
     &__title {
+        color: black;
         position: relative;
         @include breakpoint(min-lg-device) {
             text-align: right;
@@ -42,9 +43,9 @@
             margin-right: 30px;
         }
         span {
+            color: #ff6e2b;
             text-transform: uppercase;
             font-weight: 700;
-            color: $primary;
         }
         h2 {
             max-width: 425px;
@@ -72,6 +73,7 @@
         }
     }
     &__desc {
+        color: black;
         max-width: 440px;
         margin-bottom: 0;
     }
@@ -91,6 +93,16 @@
         z-index: -1;
     }
 }
+.quaternary {
+    &__bg {
+        background-color: #f04c4c;
+    }
+}
+.tertiary {
+    &__bg {
+        background-color: #f46666;
+    }
+}
 .secondary {
     &__bg {
         background-color: $secondary;
@@ -98,7 +110,7 @@
 }
 .primary {
     &__bg {
-        background-color: $primary;
+        background-color: #ff6e2b;
         .content {
             &:before {
                 color: #ff6e2b;
@@ -115,18 +127,6 @@
 }
 .content {
     z-index: 2;
-    &:before {
-        content: attr(data-count);
-        color: #0d2d62;
-        display: block;
-        position: absolute;
-        bottom: -20px;
-        right: -10px;
-        font-size: 120px;
-        font-weight: 900;
-        line-height: 1;
-        z-index: -1;
-    }
 }
 .title {
     font-size: 28px;
