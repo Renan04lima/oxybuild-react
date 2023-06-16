@@ -29,6 +29,18 @@
         font-size: 12px;
     }
 }
+.content {
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: $white;
+    @include breakpoint(max-md-device) {
+        margin-bottom: 20px;
+    }
+    @include breakpoint(max-sm-device) {
+        font-size: 20px;
+    }
+}
 .title {
     position: relative;
     text-align: center;

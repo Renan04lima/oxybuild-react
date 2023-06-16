@@ -11,6 +11,9 @@ function Newsletter({ newsletterItems }) {
                 <Row>
                     {newsletterItems?.map((newsletterItem) => (
                         <Col lg={{ span: 12 }} key={newsletterItem.id}>
+                            <h2 className={classes.content}>
+                                {newsletterItem?.content}
+                            </h2>
                             <div className={classes.item}>
                                 <h2 className={classes.title}>
                                     {newsletterItem?.title}
