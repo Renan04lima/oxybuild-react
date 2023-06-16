@@ -7,7 +7,7 @@ import BannerFour from '../../../components/banner/index-4';
 import Footer from '../../../components/layout/footer';
 import { getAllItems } from '../../../lib/items-util';
 
-function Materna({
+function Ninho({
     bannerFourItems,
     bannerSection,
     bannerTwoItems,
@@ -16,14 +16,17 @@ function Materna({
     return (
         <>
             <Head>
-                <title>Materna - Quintal de Gaya</title>
+                <title>Ninho - Quintal de Gaya</title>
                 <meta
                     name="description"
                     content="Quintal de Gaya - Escola Montessori"
                 />
             </Head>
-            <BreadcrumbSteps title="Materna" invertImage />
-            <BannerStep bannerTwoItems={bannerTwoItems} />
+            <BreadcrumbSteps title="Ninho" />
+            <BannerStep
+                bannerTwoItems={bannerTwoItems}
+                backgroundColor="#7d5be5"
+            />
             <BannerFour
                 bannerFourItems={bannerFourItems}
                 bannerSection={bannerSection}
@@ -38,7 +41,52 @@ function Materna({
 }
 
 export function getStaticProps() {
-    const bannerFourItems = getAllItems('banner-4');
+    const bannerFourItems = [
+        {
+            slug: 'banner-01',
+            id: 'banner-01',
+            title: 'Meeting with <br/> our Clients',
+            excerpt:
+                'Meeting with our clients for all requirements for this project we start now',
+            path: '/projects',
+            dataCount: '01',
+            dynamicClassName: 'item septenary__bg',
+            content: '',
+        },
+        {
+            slug: 'banner-02',
+            id: 'banner-02',
+            title: 'Project <br/> Planning',
+            excerpt:
+                'Meeting with our clients for all requirements for this project we start now',
+            path: '/projects',
+            dataCount: '02',
+            dynamicClassName: 'item secondary__bg',
+            content: '',
+        },
+        {
+            slug: 'banner-03',
+            id: 'banner-03',
+            title: 'Construction <br/> & Finalize',
+            excerpt:
+                'Meeting with our clients for all requirements for this project we start now',
+            path: '/projects',
+            dataCount: '03',
+            dynamicClassName: 'item octonary__bg',
+            content: '',
+        },
+        {
+            slug: 'banner-04',
+            id: 'banner-04',
+            title: 'Hand over <br/> Project',
+            excerpt:
+                'Meeting with our clients for all requirements for this project we start now',
+            path: '/projects',
+            dataCount: '04',
+            dynamicClassName: 'item primary__bg',
+            content: '',
+        },
+    ];
     const bannerSection = getAllItems('banner-section');
     const bannerTwoItems = [
         {
@@ -65,11 +113,11 @@ export function getStaticProps() {
     };
 }
 
-Materna.propTypes = {
+Ninho.propTypes = {
     bannerFourItems: PropTypes.instanceOf(Object).isRequired,
     bannerSection: PropTypes.instanceOf(Object).isRequired,
     bannerTwoItems: PropTypes.instanceOf(Object).isRequired,
     footerItems: PropTypes.instanceOf(Object).isRequired,
 };
 
-export default Materna;
+export default Ninho;

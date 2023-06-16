@@ -93,14 +93,39 @@
         z-index: -1;
     }
 }
+
+.octonary {
+    &__bg {
+        background-color: $roxo-claro;
+    }
+}
+
+.septenary {
+    &__bg {
+        background-color: $roxo;
+    }
+}
+
+.senary {
+    &__bg {
+        background-color: $azul;
+    }
+}
+
+.quinary {
+    &__bg {
+        background-color: $azul-claro;
+    }
+}
+
 .quaternary {
     &__bg {
-        background-color: #f04c4c;
+        background-color: $vermelho;
     }
 }
 .tertiary {
     &__bg {
-        background-color: #f46666;
+        background-color: $vermelho-claro;
     }
 }
 .secondary {

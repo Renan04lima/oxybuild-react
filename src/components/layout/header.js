@@ -162,7 +162,7 @@ function Header() {
                                             </ul>
                                         </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/about">
+                                            <Link href="/steps/materna">
                                                 <span>Etapas de Ensino</span>
                                             </Link>
                                             <ul
@@ -171,22 +171,22 @@ function Header() {
                                                 }
                                             >
                                                 <li>
-                                                    <Link href="/materna">
+                                                    <Link href="/steps/materna">
                                                         Materna
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/materna">
+                                                    <Link href="/steps/ninho">
                                                         Ninho I
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/materna">
+                                                    <Link href="/steps/ninho">
                                                         Ninho II
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/404">
+                                                    <Link href="/steps/ciclo">
                                                         Ciclo I
                                                     </Link>
                                                 </li>
