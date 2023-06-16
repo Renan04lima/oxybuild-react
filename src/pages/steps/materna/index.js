@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
-import BannerStep from '../../components/banner/step';
-import BreadcrumbSteps from '../../components/breadcrumbSteps';
-import BreadcrumbStepsTwo from '../../components/breadcrumbSteps/index-2';
-import BannerFour from '../../components/banner/index-4';
-import Footer from '../../components/layout/footer';
-import { getAllItems } from '../../lib/items-util';
+import BannerStep from '../../../components/banner/step';
+import BreadcrumbSteps from '../../../components/breadcrumbSteps';
+import BreadcrumbStepsTwo from '../../../components/breadcrumbSteps/index-2';
+import BannerFour from '../../../components/banner/index-4';
+import Footer from '../../../components/layout/footer';
+import { getAllItems } from '../../../lib/items-util';
 
 function OurClients({
     bannerFourItems,
