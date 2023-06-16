@@ -162,7 +162,7 @@ function Header() {
                                             </ul>
                                         </li>
                                         <li className={classes.dropdown_holder}>
-                                            <Link href="/steps/materna">
+                                            <Link href="/matriz">
                                                 <span>Etapas de Ensino</span>
                                             </Link>
                                             <ul
